@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Resume Builder Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ========================= -->
+        <!-- Header -->
+        <!-- ========================= -->
+
+        <header>
+
+            <h1>AI Resume Builder Pro</h1>
+
+            <p>Create your professional resume in minutes.</p>
+
+        </header>
+
+        <!-- ========================= -->
+        <!-- Resume Form -->
+        <!-- ========================= -->
+
+        <form id="resumeForm">
+
+            <!-- Profile Image -->
+
+            <div class="form-group">
+
+                <label for="profileImage">Profile Picture</label>
+
+                <input
+                    type="file"
+                    id="profileImage"
+                    accept="image/*">
+
+            </div>
+
+            <!-- Full Name -->
+
+            <div class="form-group">
+
+                <label for="name">Full Name *</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required>
+
+            </div>
+
+            <!-- Email -->
+
+            <div class="form-group">
+
+                <label for="email">Email *</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                    required>
+
+            </div>
+
+            <!-- Phone -->
+
+            <div class="form-group">
+
+                <label for="phone">Phone Number *</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+91 9876543210"
+                    required>
+
+            </div>
+
+            <!-- Address -->
+
+            <div class="form-group">
+
+                <label for="address">Address</label>
+
+                <textarea
+                    id="address"
+                    placeholder="Enter your address"></textarea>
+
+            </div>
+
+            <!-- Education -->
+
+            <div class="form-group">
+
+                <label for="education">Education *</label>
+
+                <textarea
+                    id="education"
+                    placeholder="Example:
+Bachelor of Technology
+ABC University
+2022 - 2026"
+                    required></textarea>
+
+            </div>
+
+            <!-- Skills -->
+
+            <div class="form-group">
+
+                <label for="skills">Skills *</label>
+
+                <textarea
+                    id="skills"
+                    placeholder="Example:
+HTML
+CSS
+JavaScript
+Python"
+                    required></textarea>
+
+            </div>
+
+            <!-- Experience -->
+
+            <div class="form-group">
+
+                <label for="experience">Experience *</label>
+
+                <textarea
+                    id="experience"
+                    placeholder="Describe your work experience..."
+                    required></textarea>
+
+            </div>
+
+            <!-- Projects -->
+
+            <div class="form-group">
+
+                <label for="projects">Projects</label>
+
+                <textarea
+                    id="projects"
+                    placeholder="Example:
+AI Resume Builder
+Weather App
+Portfolio Website"></textarea>
+
+            </div>
+
+            <!-- Languages -->
+
+            <div class="form-group">
+
+                <label for="languages">Languages Known</label>
+
+                <textarea
+                    id="languages"
+                    placeholder="English, Hindi"></textarea>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="button-group">
+
+                <button
+                    type="button"
+                    id="generateBtn">
+
+                    Generate Resume
+
+                </button>
+
+                <button
+                    type="button"
+                    id="downloadBtn">
+
+                    Download PDF
+
+                </button>
+
+            </div>
+
+        </form>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- Resume Preview -->
+        <!-- ========================= -->
+
+        <section id="resumeOutput">
+
+            <h2>Your Resume Preview</h2>
+
+            <p>Your generated resume will appear here.</p>
+
+        </section>
+
+    </div>
+
+    <!-- jsPDF Library -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
